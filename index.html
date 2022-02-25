@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="logo">
+        <div id="logo-text">
+            <img id="odin-lined" src="/sign-up_form/assets/odin-lined.png" alt="odin-lined">
+            <p>Odin Training</p>
+        </div>
+        <img id="logo-image" src="/sign-up_form/assets/ptrainer.jpg.jpg" alt="trainer_benchpress">
+    </div>
+    <div class="main">
+        <div id="welcome-message">
+            <p class="bold">This is not a real online service! You know you need something like this in your life to help you realize your full potential. Sign up <em>now</em> to get started.</p>
+            <p class="bold">You <em>know</em> you want to.</p>
+        </div>
+        <div id="form-box">
+            <p class="bold">Let's do this!</p>
+            <form action="http://httpbin.org/post" method="post">
+                <div class="form_field" id="first_name">
+                    <legend>First Name</legend>
+                    <label for="first_name"></label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="form_field" id="last_name">
+                    <legend>Last Name</legend>
+                    <label for="last_name"></label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="form_field" id="email">
+                    <legend>Email</legend>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form_field" id="phone_number">
+                    <legend>Phone Number</legend>
+                    <label for="phone_number"></label>
+                    <input type="number" name="phone_number" id="phone_number" placeholder="(xxx)xxx-xxxx" required>
+                </div>
+                <div class="form_field" id="password">
+                    <legend>Password</legend>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form_field" id="password_confirm">
+                    <legend>Confirm Password</legend>
+                    <label for="password"></label>
+                    <input type="password" name="password_confirm" id="password_confirm" required>
+                </div>
+            </form>
+        </div>
+        <div id="sign-up">
+            <button id="create-account" type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
